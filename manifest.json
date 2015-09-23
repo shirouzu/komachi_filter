@@ -1,0 +1,25 @@
+{
+    "name": "小町トピ主フィルタ",
+    "manifest_version": 2,
+    "version": "0.1.8.0",
+    "description": "トピ主レス数調査とトピ主のみ表示へのリンク",
+    "content_scripts": [{
+        "matches": [
+            "http://komachi.yomiuri.co.jp/*",
+            "https://komachi.yomiuri.co.jp/*"
+        ],
+        "js": [ "komachi_filter.js" ]
+    }],
+    "permissions": [
+        "http://komachi.yomiuri.co.jp/*",
+        "https://komachi.yomiuri.co.jp/*",
+        "storage"
+    ],
+    "options_page": "komachi_filter.html",
+    "icons": {
+         "16": "kf16.png",
+         "48": "kf48.png",
+        "128": "kf128.png"
+    }
+}
+
